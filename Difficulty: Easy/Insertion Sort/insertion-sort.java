@@ -43,14 +43,21 @@ class Solution {
     // Please change the array in-place
     public void insertionSort(int arr[]) {
         // code here
-        for(int i=0;i<arr.length;i++){
-            int j=i;
+         sorting( 0,arr.length,arr);
+           
+        
+    }
+    void sorting(int i,int n,int arr[]){
+        if(i==n){
+            return;
+        }
+         int j=i;
             while(j>0 && arr[j]<arr[j-1]){
                 int temp = arr[j];
                 arr[j]=arr[j-1];
                 arr[j-1]=temp;
                 j--;
             }
-        }
+             sorting(i+1,n,arr);
     }
 }
