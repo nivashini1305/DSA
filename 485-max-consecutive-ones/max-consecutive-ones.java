@@ -24,9 +24,10 @@ class Solution {
                 // count0=1;
             }
             // max=Math.max(max,count0);
-            max=Math.max(max,count1);
+            
            
         }
+        max=Math.max(max,count1);
         return max;
     }
 }
