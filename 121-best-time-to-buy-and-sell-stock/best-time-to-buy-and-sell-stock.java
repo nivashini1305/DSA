@@ -6,7 +6,7 @@ class Solution {
         {
             int cost=prices[i]-minimum;
             profit=Math.max(profit,cost);
-            minimum=Math.min(prices[i],minimum);
+            minimum=Math.min(minimum,prices[i]);
         }
         return profit;
     }
