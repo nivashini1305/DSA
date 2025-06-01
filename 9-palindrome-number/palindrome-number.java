@@ -1,19 +1,17 @@
 class Solution {
     public boolean isPalindrome(int x) {
         int temp=0;
-        int num=x;
-        if(x<0)
-        return false;
-        else{
-            while(x>0){
-            int remainder=x%10;
-            x=x/10;
-            temp= temp*10+remainder;
-            }
+        int n=x;
+        while(x>0)
+        {
+           temp=temp*10+x%10;
+           x=x/10; 
+           System.out.println(temp);
         }
-        if(num==temp){
-                return true;
-            }
-            return false;
+        if(temp==n)
+        {
+            return true;
+        }
+        return false;
     }
 }
