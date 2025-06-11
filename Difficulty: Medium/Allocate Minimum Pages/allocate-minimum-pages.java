@@ -22,7 +22,6 @@ class Solution {
         {
             int mid=(low+high)/2;
             int totalStd=fn(arr,mid);
-           
             if(totalStd>k)
             {
                 low=mid+1;
@@ -30,9 +29,10 @@ class Solution {
             else
             {
                 high=mid-1;
+                ans=mid;
             }
         }
-        return low;
+        return ans;
     }
     static int fn(int[] arr,int maxPage)
     {
