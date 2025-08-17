@@ -10,14 +10,6 @@ class Solution {
             left++;
             right++;
         }
-        // for(int i =0;i<Math.min(word1.length(),word2.length());i++)
-        // {
-        //     sb.append(word1.charAt(i));
-        //     sb.append(word2.charAt(i));
-        //     left++;
-        //     right++;
-        //     System.out.println("l "+ left + " r "+ right);
-        // }
         while(left < word1.length())
         {
             sb.append(word1.charAt(left));
