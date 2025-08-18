@@ -17,23 +17,17 @@ class Solution {
                 }
                 
             } 
-            if(i==chars.length-1)
-            {
-                if(count == 0) sb.append(chars[i]);
-                else
-                {
-                    sb.append(chars[i]);
-                    sb.append(count+1);
-                }
-                
-            }
         }
-        String s = sb.toString();
-        System.out.println(s);
-        for(int i=0;i<s.length();i++)
+        if(count == 0) sb.append(chars[chars.length-1]);
+        else
         {
-            chars[i] =  s.charAt(i);
+            sb.append(chars[chars.length-1]);
+            sb.append(count+1);
         }
-        return s.length();
+        for(int i=0;i<sb.length();i++)
+        {
+            chars[i] =  sb.charAt(i);
+        }
+        return sb.length();
     }
 }
