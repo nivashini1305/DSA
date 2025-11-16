@@ -6,7 +6,7 @@ class Solution {
         {
             prime[i] = 1;
         }
-        for(int i=2;i<=Math.sqrt(n);i++)
+        for(int i=2;i*i<=n;i++)
         {
             if(prime[i] == 1)
             {
